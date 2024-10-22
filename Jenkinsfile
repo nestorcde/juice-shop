@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Run') {
+        stage('Build') {
             steps {
                 sh 'npm install'
-                sh 'npm run start'
             }
         }
     }
